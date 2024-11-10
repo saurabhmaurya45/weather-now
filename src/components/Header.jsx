@@ -79,7 +79,7 @@ const Header = ({ currentLocation, setCurrentLocation }) => {
             <input
               type="text"
               placeholder="Search"
-              className="w-full h-10 p-2 pl-10 rounded-l-full border  border-gray-200 appearance-none focus:outline-none "
+              className="w-full h-10 p-2 pl-5 rounded-l-full border  border-gray-200 appearance-none focus:outline-none "
               value={searchValue}
               onChange={(e) => onChangeHandler(e)}
               onFocus={() =>
@@ -126,7 +126,7 @@ const Header = ({ currentLocation, setCurrentLocation }) => {
               </div>
             )}
           </div>
-          <div className="md:w-[30%] h-10 hidden md:flex items-center text-lg font-medium overflow-hidden text-nowrap">
+          <div className="md:w-[30%] h-10 hidden md:flex items-center justify-end text-lg font-medium overflow-hidden text-nowrap">
             {currentLocation.longName ?? ""}
           </div>
         </div>

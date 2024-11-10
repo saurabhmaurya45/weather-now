@@ -97,21 +97,21 @@ const Forecast = ({ currentLocation }) => {
             sx={{ backgroundColor: "rgba(111,93,165 ,0.1)", height: "100%" }}
           >
             <CardContent>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                }}
-              >
+              <div className="overflow-x-scroll p-2">
                 <table className="w-full text-center">
                   <thead>
                     <tr className="">
-                      <th className="uppercase text-sm">Time</th>
-                      <th className="uppercase text-sm">Temperature (°C)</th>
-                      <th className="uppercase text-sm">Humidity (%)</th>
-                      <th className="uppercase text-sm">Wind Speed (m/s)</th>
-                      <th className="uppercase text-sm">Weather</th>
+                      <th className="uppercase text-sm text-nowrap px-2">Time</th>
+                      <th className="uppercase text-sm text-nowrap px-2">
+                        Temperature (°C)
+                      </th>
+                      <th className="uppercase text-sm text-nowrap px-2">
+                        Humidity (%)
+                      </th>
+                      <th className="uppercase text-sm text-nowrap px-2">
+                        Wind Speed (m/s)
+                      </th>
+                      <th className="uppercase text-sm text-nowrap px-2">Weather</th>
                     </tr>
                   </thead>
                   <tbody>

@@ -242,7 +242,7 @@ const WeatherCard = ({ currentLocation }) => {
                 }}
               >
                 <CardContent className="flex flex-col gap-2">
-                  <h2 className="info-title flex text-nowrap gap-2 ">
+                  <h2 className="info-title flex text-nowrap gap-2 font-semibold">
                     {icon} {title}
                   </h2>
                   <p className="info-description">{description}</p>
